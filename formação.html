@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecimento</title>
+    <style>
+        .menu{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            border: 3px solid rgb(24, 108, 160);
+            width: 100%;
+            background-color: rgb(22, 144, 220);
+            }
+            
+            .vert{float:left;}
+            
+            .vert .an{
+            text-align: center;
+            border-right: 2px solid rgb(24, 108, 160);
+            font-family:serif;
+            font-size: 20px;
+            background-color: rgb(22, 144, 220);
+            height: 50px;
+            display: block;
+            color: rgb(248, 243, 243);
+            padding-right:150px; 
+            padding-left: 5px;
+            text-decoration: none;
+            }
+body{
+    background-color: #f0f8ff;
+}
+/* aqui eu quis arredondar as bordas,  colorir conforme as outras paginas*/
+h1{color: pink;
+    text-align: center;
+    border:6px ridge pink;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(241, 133, 153);
+}
+/* quis trazer um amarelinho pastel */
+h2{color: argb(246, 214, 87);}
+
+.listform{border: 3px solid rgb(249, 208, 59);
+    background-color: rgb(248, 242, 213);
+
+}
+
+.listhab{border: 3px solid rgb(255, 211, 53);
+    background-color: rgb(248, 242, 213);
+
+}
+    </style>
+</head>
+<body>
+   <!-- como citei no index, é para aparecer esse menu horizontal em todas as paginas e linkar todas elas -->
+    <ul class=menu>
+        
+        <li class="vert"><a class="an" href="index.html">Inicio</a></li>
+        <li class="vert"><a class="an" href="sobremim.html">Sobre mim</a></li>
+        <li class="vert"><a class="an" href="formação.html">Minhas formações</a></li>
+        <li class="vert"><a class="an" href="portifolio.html">Meus trabalhos</a></li>
+        <li class="vert"><a class="an" href="contatos.html">Fale comigo</a></li>
+    </ul>
+
+    <br><br><br><br>
+
+    <h1>Aqui você encontra alguns dos meu conhecimentos.</h1>
+    <h2>Formações</h2>
+    <!-- aqui eu criei uam div de classe listform de uma lsita não ordenada para lista de formações pra depois aplicar o css -->
+    <div class="listform">
+        <ul>
+            <li>Ensino Médio Técnico pelo Colégio Estadual José Bonifácio</li>
+            <br>
+            <li>Word e Excel- Tive muitas aulas na escola, mas a maior parte do meu conhecimento vem da busca independente na internet e da prática. </li>
+            <br>
+            <li>Inglês intermediário Avançado-Nível B2- Eu prefiro dizer que sou autodidata pois eu até fiz aulas do curso do Professor Kenny, mas não cheguei a concluir. Então meu conhecimento vem da leitura, videos, jogos e conversação no omegle e em servers estrangeiros no Discord.</li>
+            <br>
+            <li>HTML e Python básico- Claro que a faculdade ajuda mas eu faço cursos por fora na internet, como no site da Alura e do Curso em video.</li>
+            <br>
+            <li>Secretáriado- Fiz curso de Secretariado no Colégio José Bonifácio também, sou formada e apta pra exercer a profissão mas nunca corri atrás dessa carreira</li>
+        </ul>
+    </div>
+
+    <h2>Habilidades</h2>
+    <!-- aqui eu criei uam div de classe listhab de uma lsita não ordenada para lista de habilidades pra depois aplicar o css -->
+    <div class="listhab">
+        <ul>
+            <li>Comunicação: Posso falar com facilidade, ouvir quando necessário e entender tudo o que preciso.</li>
+            <br>
+            <li>Trabalho em equipe: Sou uma pessoa extrovertida e desde a adolescencia é muito comum eu trabalhar em equipe.</li>
+            <br>
+            <li>Capacidade analítica: Como pessoa muito organizada e crítica, tenho tendência para analisar.À medida que estudei e trabalhei, minhas habilidades analíticas aumentaram.</li>
+            <br>
+            <li>Criatividade: Antes de descobrir o mundo da tecnologia, queria ser artista. Desde criança gostava de pintar, cantar, atuar e dançar, por isso estou bastante familiarizado com a criatividade.</li>
+            <br>
+            <li>Multitarefa: consigo realizar diversas tarefas ao mesmo tempo sem muita dificuldade.</li>
+            <br>
+            <li>Autodidata: Tenho habilidade de aprender as coisas por minha conta facilmente</li>
+        </ul>
+    </div>
+</body>
+</html>

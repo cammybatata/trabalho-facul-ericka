@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        .menu{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            border: 3px solid rgb(24, 108, 160);
+            width: 100%;
+            background-color: rgb(22, 144, 220);
+            }
+            
+            .vert{float:left;}
+            
+            .vert .an{
+            text-align: center;
+            border-right: 2px solid rgb(24, 108, 160);
+            font-family:serif;
+            font-size: 20px;
+            background-color: rgb(22, 144, 220);
+            height: 50px;
+            display: block;
+            color: rgb(248, 243, 243);
+            padding-right:150px; 
+            padding-left: 5px;
+            text-decoration: none;
+            }
+    body{
+        background-color: #f0f8ff;
+        }
+   
+    
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: sans-serif;
+        color: gold;
+        background-color: white;
+        border: 2px solid #ffb12a;
+        max-width: 550px; /* Largura máxima do contêiner */
+        margin: 0 auto;   /* Centraliza o contêiner */
+        padding: 20px;    /* Espaçamento interno */
+        text-align: center;
+    }
+   h3{font-family: sans-serif;
+    color: rgb(246, 177, 189);
+    text-align: center;
+    margin-top:2%;
+    justify-content: center;}
+
+.mensagem{text-align: left;
+        }
+   
+fieldset{
+        font-family: sans-serif;
+        font-size: 1em;
+        color: rgb(3, 24, 87);
+        display: flex;
+        max-width: 450px; 
+        margin: 0 auto;   /* Centraliza a caixa */
+        padding: 20px;    /* coloquei espaçamento interno */
+        border: 2px solid rgb(27, 73, 113); 
+        text-align: center;}
+
+    .outras{
+        font-family: sans-serif;
+        font-size: 20px;
+        color:gold;
+        text-align: center;
+        margin-top:2%;
+        justify-content: center
+    }
+    input, textarea, button, .disc, .wpp, .twt{border-radius: 5%;}
+
+    .imagens {
+        display: flex;            
+        justify-content: center;  
+        gap: 20px;             
+    }
+    
+    .imagens img {
+        width: 100px;             /* largura fixa das imagens */
+        height: 100px;            /* altura fixa das imagens */
+        object-fit: cover;        /* garante que as imagens se ajustem ao tamanho definido */
+    }
+
+    .botao{color: white;
+    background-color: rgb(83, 148, 234);}
+
+    .botao:hover{
+        color:rgb(83, 148, 234) ;
+        background-color: white;
+    }
+    .campo input:focus, .campo textarea:focus
+    {background: rgb(216, 237, 255);}
+
+    </style>
+</head>
+    <body>
+        <!-- como citei no index, é para aparecer esse menu horizontal em todas as paginas e linkar todas elas -->
+        <ul class=menu>
+            
+            <li class="vert"><a class="an" href="index.html">Inicio</a></li>
+            <li class="vert"><a class="an" href="sobremim.html">Sobre mim</a></li>
+            <li class="vert"><a class="an" href="formação.html">Minhas formações</a></li>
+            <li class="vert"><a class="an" href="portifolio.html">Meus trabalhos</a></li>
+            <li class="vert"><a class="an" href="contatos.html">Fale comigo</a></li>
+        </ul>
+
+        <br><br><br><br>
+        <h1>Como entrar em contato comigo:</h1>
+        <h3>Você pode me mandar uma mensagem aqui:</h3>
+        <div class="container">
+
+            <fieldset class="campo">
+                <form action="https://formsubmit.co/testefaculericka@outlook.com" method="POST" autocomplete="off">
+                
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" class="nome" required />
+
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" name="email" class="email" required />
+
+                    <p class="mensagem"><label for="mensagem"><strong>Mensagem</strong></label></p>
+                    <p class="'mensagem"><textarea name="mensagem" class="mensagem" rows="10" cols="50" placeholder="Escreva sua mensagem." required></textarea></p>
+                    <br>
+                    <button type="submit" class="botao">Enviar</button>
+
+                    <input type="hidden" name="_subject" value="Novo contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+            </fieldset>
+
+
+            <br><br><br>
+        </div>
+
+
+    <br><br>
+            <p class="outras">Mas há outras formas de falar comigo, você pode escolher qualquer uma dessas:</p>
+    <br><br><br>
+            <div class="imagens">
+                
+                <a href="https://discord.gg/NzmPNtqa" target="_blank">
+                    <img class="disc" src="imagens/Discord.jpg" alt="discord" title="discord"> 
+                </a>
+
+                
+                <a href="https://x.com/miya_chan_s2" target="_blank">
+                    <img class="twt" src="imagens/twitter.webp"  alt="Twitter and X" title="Twitter">
+                </a>
+                
+                
+                <a href="https://wa.me/41991093870" target="_blank">
+                    <img class="wpp" src="imagens/whatsapp.png"alt="Whatsapp" title="whatsapp">
+                </a>
+            </div>
+        
+    </body>
+</html>

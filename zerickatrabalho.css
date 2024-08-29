@@ -1,0 +1,80 @@
+.menu{
+list-style-type:none;  /* esse comando pra tirar os marcadores */
+margin:0; 
+padding:0;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+border: 3px solid rgb(24, 108, 160); /* especificações da borda */
+width: 100%;  /* coloquei pra ocupar o espaço todo  */
+background-color: rgb(22, 144, 220);
+}
+/*  essa class vert eu queria deixar o menu na horizontal como  foi mostrado an aula*/
+.vert{float:left;}
+/*  aqui eu fui estilizando a lista e a ancora, alinhamento, fonte, tamanho, cor, cor de fundo, altura, tirar o marcador e etc*/
+.vert .an{
+text-align: center; 
+border-right: 2px solid rgb(24, 108, 160);
+font-family:serif;
+font-size: 20px;
+background-color: rgb(22, 144, 220);
+height: 50px;
+display: block;
+color: rgb(248, 243, 243);
+padding-right:150px; 
+padding-left: 5px;
+text-decoration: none;
+}
+/* simplesmente estilazando o titulo, a cor, alinhamento, borda da caixa, a borda da letra */
+h1{font-size: 50px;
+    text-align: center;
+    color: pink;
+    border-bottom: 5px dotted pink;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(246, 158, 174);
+}
+
+h2{font-size: 40px;
+    text-align:  center;} 
+/* só o alinhamento  */
+h3{font-size: 30px; 
+    text-align:  center;}
+
+
+
+/* essa div cont foi pra estilizar borda e o background  */
+#cont{
+    border: 5px solid pink;
+    background-color: white;
+    list-style-type:none;
+    width: 1000px;
+    font-size: 30px;
+    color: rgb(6, 40, 70);
+   }
+/* foi só pra tirar a linha underline e o marcador */
+.conhecer .ba{ 
+    text-decoration: none;
+    }
+    /* aqui pra tirar os marcadores */
+.topicos{list-style: none;}
+
+/* eu queria tirar a linha e colocar cor quando passasse por cima */
+.conhecer .ba:hover{
+  
+    background-color: pink;
+    text-decoration: none
+}
+
+/*  */
+body{
+    background-color: #f0f8ff;
+}
+/* coloquei pra centralizar tudo os textos */
+#cont{
+    text-align: center;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content:  center;
+    }
